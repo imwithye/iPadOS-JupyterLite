@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showWebView = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Button {
+            showWebView.toggle()
+        } label: {
+            Text("AppCoda")
         }
-        .padding()
+        .sheet(isPresented: $showWebView) {
+            WebView(url: URL(string: "https://www.appcoda.com")!)
+        }
     }
 }
 
