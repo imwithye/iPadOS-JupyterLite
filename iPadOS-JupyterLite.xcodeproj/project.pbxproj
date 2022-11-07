@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AAC5502A29190BD400932057 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC5502929190BD400932057 /* WebView.swift */; };
+		AAC5502D2919105400932057 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AAC5502C2919105400932057 /* index.html */; };
 		C3A7E0FF2918FF44000EA29F /* iPadOS_JupyterLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A7E0FE2918FF44000EA29F /* iPadOS_JupyterLiteApp.swift */; };
 		C3A7E1012918FF44000EA29F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A7E1002918FF44000EA29F /* ContentView.swift */; };
 		C3A7E1032918FF46000EA29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A7E1022918FF46000EA29F /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		AAC5502929190BD400932057 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AAC5502C2919105400932057 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		C3A7E0FB2918FF44000EA29F /* iPadOS-JupyterLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPadOS-JupyterLite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A7E0FE2918FF44000EA29F /* iPadOS_JupyterLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadOS_JupyterLiteApp.swift; sourceTree = "<group>"; };
 		C3A7E1002918FF44000EA29F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAC5502B2919105400932057 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				AAC5502C2919105400932057 /* index.html */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
 		C3A7E0F22918FF44000EA29F = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		C3A7E0FD2918FF44000EA29F /* iPadOS-JupyterLite */ = {
 			isa = PBXGroup;
 			children = (
+				AAC5502B2919105400932057 /* web */,
 				C3A7E0FE2918FF44000EA29F /* iPadOS_JupyterLiteApp.swift */,
 				C3A7E1002918FF44000EA29F /* ContentView.swift */,
 				C3A7E1022918FF46000EA29F /* Assets.xcassets */,
@@ -130,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC5502D2919105400932057 /* index.html in Resources */,
 				C3A7E1072918FF46000EA29F /* Preview Assets.xcassets in Resources */,
 				C3A7E1032918FF46000EA29F /* Assets.xcassets in Resources */,
 			);
@@ -285,7 +297,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -327,7 +339,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
